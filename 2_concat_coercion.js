@@ -15,19 +15,20 @@
 //! It's worth noting that type coercion can lead to unexpected results, so it's essential to be aware of how JavaScript handles these situations.
 
 // let sum = "5" + 10;
+// let sum =  10 + "5";
 // console.log(sum);
 
 //* ============================
 //* Tricky Interview Questions
 //* ============================
-// console.log(10 + "20");
-// console.log(9 - "5");
-// console.log("Java" + "Script");
-// console.log(" " + " ");
-// let sum = " " + 0;
-// console.log(typeof sum);
-// console.log("vinod" - "thapa");
-// console.log(true + true);
-// console.log(true + false);
-// console.log(false + true);
-// console.log(false - true);
+// console.log(10 + "20");                             //Output-1020
+// console.log(9 - "5");                               //Output-4
+// console.log("Java" + "Script");                     //Output-JavaScript
+// console.log(" " + " ");                             //Output-
+// let sum = " " + 0;                             
+// console.log(typeof sum);                            //Output-string
+// console.log("vinod" - "thapa");                     //Output-NaN
+// console.log(true + true);                           //Output-2
+// console.log(true + false);                          //Output-1
+// console.log(false + true);                          //Output-1
+// console.log(false - true);                          //Output-(-1)
