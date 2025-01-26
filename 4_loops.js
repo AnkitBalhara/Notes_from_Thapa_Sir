@@ -339,6 +339,7 @@ if (num === 0) {
 // then it is a leap year. Otherwise, it is not a leap year.
 
 // var year = 2020;
+// var year = 1900;
 
 // if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 //   console.log(year, "it's a leap year");
