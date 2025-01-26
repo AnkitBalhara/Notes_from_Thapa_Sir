@@ -80,6 +80,7 @@
 
 //! var result = 0.1 + 0.2 ❓ 🤔💭
 // var result = 0.1 + 0.2;
+// console.log(result)
 // console.log(result.toFixed(2));
 // when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
 
@@ -211,8 +212,9 @@
 // console.log(-"3");
 
 //? Prefix Increment (++x) and Prefix Decrement (--x): In prefix form, the value of the operand is first incremented or decremented, and then the result is returned.
-// var x = 5;
-// var y = --x;
+// let x = 5;
+// console.log(x);
+// let y = --x;
 // console.log(y);
 // console.log(x);
 
@@ -246,8 +248,10 @@
 //*  Combined Interview Questions
 //* ====================================
 
-// console.log(typeof ("5" - 3));
+// console.log(typeof ("5" - 3));                   // Output - 2
 
-// console.log(2 < 12 < 5);
+// console.log(2 < 12 < 5);                         // Output - true
+// (2<12)-------> true, true =1
+// 1<5 -------> "true"
 
-// console.log("20" + 10 + 10);
+// console.log("20" + 10 + 10);                     // Output -201010
