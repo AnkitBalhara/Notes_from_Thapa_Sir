@@ -90,7 +90,7 @@
 
 //! Practice Time
 //? Let's say we want to greet students with one same line
-//! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
+//! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "sita" and once with the argument "ram" & once by "vinod"
 // function greet(name) {
 //   console.log("Hello " + name + ", Welcome to Thapa Technical JS Course");
 // }
@@ -208,6 +208,12 @@
 //   }
 // };
 
+
+// const calculator = (num1,num2,sign)=>{
+//   return eval(`${num1} ${sign} ${num2}`)
+// }
+// console.log(calculator(3,3,"*"))
+
 // console.log(calculator(5, 2, "+")); // Output: 7
 // console.log(calculator(8, 4, "-")); // Output: 4
 // console.log(calculator(10, 0, "/")); // Output: 5
@@ -215,15 +221,15 @@
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
-const isReverse = (str) => {
-    let reverse = "";
-    for (let char = str.length - 1; char >= 0; char--) {
-      reverse = reverse + str[char];
-    }
-    return reverse;
-  };
+// const isReverse = (str) => {
+//     let reverse = "";
+//     for (let char = str.length - 1; char >= 0; char--) {
+//       reverse = reverse + str[char];
+//     }
+//     return reverse;
+//   };
   
-  console.log(isReverse("vinod thapa"));
+//   console.log(isReverse("vinod thapa"));
   
   //! Palindrome Check:
   //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
@@ -242,7 +248,8 @@ const isReverse = (str) => {
     //     return false;
     //   }
   
-    return str === reverse ? true : false;
+    // return str === reverse ? true : false;
+    return str === reverse;
   };
   
   console.log(isPalindrome("level"));
