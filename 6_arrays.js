@@ -31,8 +31,11 @@
 //* =====================================
 //?👉 Accessing Elements:  Array elements are accessed using zero-based indices.
 // let fruits = ["apple", "orange", "banana"];
-// console.log(fruits[3]);
-// console.log(fruits["apple"]);
+// console.log(fruits[3]);                          // Output - undefined
+// fruits[6]="99"
+// console.log(fruits)                              // Output - [ 'apple', 'orange', 'banana', <3 empty items>, '99' ]
+// console.log(fruits.length)                       // Output - 7
+// console.log(fruits["apple"]);                    // Output - undefined
 
 //* ======================================
 //*  Modifying Elements:
@@ -157,6 +160,7 @@
 
 // //! what if you want to add the element at the end
 // fruits.splice(-1, 0, "grapes");
+// console.log(fruits);
 // fruits.splice(1, 0, "grapes");
 // console.log(fruits);
 
@@ -166,22 +170,26 @@
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+// const numberSet = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
-// console.log(numbers.indexOf(4, 5));
+// console.log(numberSet.indexOf(element, fromIndex));
+// console.log(numberSet.indexOf(8, 0));  //Return the index number of (8).
+// console.log(numberSet.indexOf(2, 4)); //  If not present the return -1.
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
-// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.indexOf(6);
-// console.log(result);
-// const result1 = numbers.lastIndexOf(6);
-// console.log(result1);
-// const result = numbers.indexOf(6, 5);
-// console.log(result);
+// const numberSet = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+// const result = numberSet.indexOf(6);
+// console.log(result);  //Output :- 3
+// const result1 = numberSet.lastIndexOf(6);
+// console.log(result1);//Output :- 6
+// const result2 = numberSet.indexOf(6, 5);
+// console.log(result2);//Output :- 6
+// const result3 = numberSet.indexOf(6, 9);
+// console.log(result3);//Output :- -1
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
 // Syntax
@@ -221,15 +229,21 @@
 //*  Filter in an Array
 //* =========================================
 //? Search +  Filter
-// const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
+// const numberSet = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
 
 //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
 
-// const result = numbers.find((curElem) => {
+// const result = numberSet.find((curElem) => {
 //   return curElem > 6;
 // });
 
 // console.log(result);
+
+// const result1 = numberSet.find((curElem) => {
+//   return curElem > 10;
+// });
+
+// console.log(result1);
 
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -352,10 +366,10 @@
 
 //! 1: Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
 // Original array of strings
-const words = ["APPLE", "banana", "cherry", "date"];
+// const words = ["APPLE", "banana", "cherry", "date"];
 
 // const result = words.map((curElem) => {
-//   return curElem.toLowerCase();
+//   return curElem.toUpperCase();
 // });
 
 // console.log(result);
@@ -363,7 +377,7 @@ const words = ["APPLE", "banana", "cherry", "date"];
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // Original array of numbers
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
 // const result = numbers
 //   .map((curElem) => {
@@ -383,7 +397,7 @@ const numbers = [1, 2, 3, 4, 5];
 
 //! 3: Using the map method, write a function that takes an array of names and returns a new array where each name is prefixed with "Mr. ".
 
-// const names = ["ram", "vinod", "laxman"];
+// const names = ["Ram", "Vinod", "Laxman","Hanuman"];
 // const prefixName = names.map((curName) => `Mr. ${curName}`);
 // console.log(prefixName);
 
@@ -402,10 +416,10 @@ const numbers = [1, 2, 3, 4, 5];
 // array (optional): The array reduce was called upon.
 // initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.
 
-const productPrice = [100, 200, 300, 400, 500];
+// const productPrice = [1, 2, 3, 4, 5];
 
-const totalPrice = productPrice.reduce((accum, curElem) => {
-  return accum + curElem;
-}, 0);
+// const totalPrice = productPrice.reduce((accum, curElem) => {
+//   return accum + curElem;
+// }, 0);
 
-console.log(totalPrice);
+// console.log(totalPrice);
