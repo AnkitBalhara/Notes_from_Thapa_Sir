@@ -2,9 +2,16 @@
 
 // let obj = new Object   // This is a singleton Object.
 // let obj = {} // This is non-Singleton object.
+// ----------------------------------------------------------------------------------------------
+// How to call a object 2 methods:-
+let obj = {
+    name:"Ram",
+    full name:"SiyaRam"
+}
+// obj.name
 
 // The Question is How can we have one object inside the other..
-// -------------------------------
+// ----------------------------------------------------------------------------------------------
 // let object1 = {
     //     fullName:{
         //         firstName:"Ram",
@@ -14,12 +21,12 @@
 // console.log(object1.fullName.firstName)
         
 
-// -------------------------------
-let obj1 = {
-    Name:"Ram",
-    Bhagat:"Hanuman",
-    Bhai:"Lakshman"
-}
+// ----------------------------------------------------------------------------------------------
+// let obj1 = {
+//     Name:"Ram",
+//     Bhagat:"Hanuman",
+//     Bhai:"Lakshman"
+// }
 
 // There are two methods below run them one by one and see the difference between Deep Copy and Shallow copy.
 //  +++++++++++++++  IMP ++++++++++++++++=
@@ -39,3 +46,4 @@ let obj1 = {
 
 //  +++++++++++++++++++++++
 
+// ----------------------------------------------------------------------------------------------
