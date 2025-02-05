@@ -6,9 +6,10 @@
 // How to call a object 2 methods:-
 let obj = {
     name:"Ram",
-    full name:"SiyaRam"
+    "full name":"SiyaRam"
 }
 // obj.name
+// console.log(obj["full name"])
 
 // The Question is How can we have one object inside the other..
 // ----------------------------------------------------------------------------------------------
